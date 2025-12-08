@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eef3f8;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #0056b3;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #0056b3;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+.btn {
+    background: #0056b3;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #003f82;
+}
+
+/* FORM BOXES */
+.form-container, .mobile-box {
+    width: 350px;
+    background: white;
+    margin: 60px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cfcfcf;
+}
+
+.form-container h2, .mobile-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+}
+
+/* RECHARGE PLANS */
+.recharge-section {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.plans-heading {
+    margin-top: 40px;
+    color: #0056b3;
+}
+
+.plans-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.plan-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    border: 2px solid #0056b3;
+}
+
+.plan-card h3 {
+    color: #0056b3;
+}
+
+.selected-plan-box {
+    margin-top: 20px;
+    background: #dff0ff;
+    padding: 15px;
+    border-left: 5px solid #0056b3;
+    font-weight: bold;
+    display: none;
+}
